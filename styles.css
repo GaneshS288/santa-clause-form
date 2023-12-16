@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "dancing_script";
+    src: url(fonts/dancingscript-variablefont_wght-webfont.woff);
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100dvh;
+    height: 100vh;
     padding: 0;
     margin: 0;
     border: 0;
@@ -23,30 +28,42 @@ img {
     flex: 0;
     height: auto;
     position: relative;
+    background-image: url(hero-santa.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.hero-side > img + img {
-    position: absolute;
-    width: 80px;
-    bottom: 90px;
-    left: 150px;
+.hero-side > p {
+    align-self: flex-end;
+    color: floralwhite;
+    margin: 1rem auto;
+    font: 1rem helvetica, "sans-serif";
 }
 
-.hero-side > span:first-of-type {
+.bell-container {
+    display: flex;
+    gap: 6rem;
+    position: relative;
+    margin-top: 8rem;
+    padding-left: 1rem;
+    flex: 1;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+img {
+    width: 60px;
+    height: 60px;
     position: absolute;
+    left: 170px;
+}
+
+.bell-container > span {
+    font: 4rem "dancing_script";
     color: red;
-    top: 210px;
-    left: 20px;
-    font-size: 3rem;
 }
 
-.hero-side > span + span {
-    position: absolute;
-    top: 210px;
-    color: rebeccapurple;
-    left: 250px;
-    font-size: 3rem;
-}
 
 form {
     display: flex;
@@ -56,8 +73,9 @@ form {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0 0 1rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .input-container {
@@ -77,6 +95,10 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+label {
+    font: 600 1.1rem helvetica, sans-serif;
 }
 
 input {
@@ -101,13 +123,16 @@ input:user-invalid {
 }
 
 button {
-    width: 120px;
+    width: 8rem;
     height: 40px;
+    background-color: cadetblue;
     font-size: inherit;
     border: 2px solid black;
     border-radius: 3px;
 }
 
-.input-container + div > p {
+.button-container > p {
     margin-top: 0.4rem;
+    font: 1.2rem arial;
 }
+
