@@ -60,7 +60,7 @@ img {
 }
 
 .bell-container > span {
-    font: 4rem "dancing_script";
+    font: 4rem "dancing_script", Times, "Times New Roman";
     color: red;
 }
 
@@ -68,7 +68,7 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    background-color: chartreuse;
+    background-color: darkkhaki;
     flex: auto;
 }
 
@@ -114,7 +114,11 @@ input:focus {
 }
 
 input:user-invalid {
-    border: solid 2px lightcoral;
+    border: solid 2px orangered;
+}
+
+input:user-valid {
+    border: solid 2px green;
 }
 
 .input-container + div {
@@ -125,7 +129,7 @@ input:user-invalid {
 button {
     width: 8rem;
     height: 40px;
-    background-color: cadetblue;
+    background-color: greenyellow;
     font-size: inherit;
     border: 2px solid black;
     border-radius: 3px;
@@ -133,6 +137,6 @@ button {
 
 .button-container > p {
     margin-top: 0.4rem;
-    font: 1.2rem arial;
+    font: 1.2rem arial, helvatica, monospace;
 }
 
