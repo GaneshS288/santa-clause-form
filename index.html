@@ -3,25 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Santa is awaiting!</title>
 </head>
 
 <body>
-   <div class="hero-side">
-    <img src="hero-santa.jpg" alt="A minature sanata between snow and trees">
-   </div> 
-
-   <h2></h2>
-
-   <form action="" method="get">
-    <label for="first_name">First Name:</label>
-    <input type="text" maxlength="12" id="first_name" name="first_name" placeholder="Ganesh" required>
-
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name" placeholder="Macscroog">
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-   </form>
+   <div class="main-container">
+       <div class="hero-side">
+        <img src="hero-santa.jpg" width="1920" height="2880" alt="A minature sanata between snow and trees">
+       </div>
+       <form action="" method="get">
+        <h2>Santa has decided to embrace the technology, this year he is going all digital.
+            Sign up below so he can send you your christmas gift.
+            <br>
+            <br>
+            Sign up or no gift for you!
+        </h2>
+        <div class="input-container">
+            <div>
+                <div>
+                    <label for="first_name">First Name</label>
+                    <input type="text" maxlength="12" id="first_name" name="first_name" placeholder="Ganesh" required>
+                </div>
+                <div>
+                    <lable for="email">Email</lable>
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Macscrooge">
+                </div>
+       
+                <div>
+                    <lable for="phone">Phone Number</lable>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+       
+                <div>
+                    <label for="pwd_confirm">Confirm Password</label>
+                    <input type="password" id="pwd_confirm" name="pwd_confirm" required>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Sign up!</button>
+            <p>already signed up?<a href="#top">Log in</a></p>
+        </div>
+       </form>
+   </div>
 </body>
 </html>
