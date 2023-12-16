@@ -22,6 +22,30 @@ img {
     min-width: clamp(350px, 400px, 450px);
     flex: 0;
     height: auto;
+    position: relative;
+}
+
+.hero-side > img + img {
+    position: absolute;
+    width: 80px;
+    bottom: 90px;
+    left: 150px;
+}
+
+.hero-side > span:first-of-type {
+    position: absolute;
+    color: red;
+    top: 210px;
+    left: 20px;
+    font-size: 3rem;
+}
+
+.hero-side > span + span {
+    position: absolute;
+    top: 210px;
+    color: rebeccapurple;
+    left: 250px;
+    font-size: 3rem;
 }
 
 form {
@@ -63,8 +87,12 @@ input {
 }
 
 input:focus {
-    border: solid 2px aqua;
+    border: solid 2px lightblue;
     outline: none;
+}
+
+input:user-invalid {
+    border: solid 2px lightcoral;
 }
 
 .input-container + div {
