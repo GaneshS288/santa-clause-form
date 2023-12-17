@@ -43,10 +43,9 @@ img {
 
 .bell-container {
     display: flex;
-    gap: 6rem;
     position: relative;
     margin-top: 8rem;
-    padding-left: 1rem;
+    justify-content: space-around;
     flex: 1;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.356);
