@@ -120,6 +120,45 @@ input:user-valid {
     border: solid 2px green;
 }
 
+input + span {
+    position: relative;
+}
+
+input[type = "tel"]:user-invalid + span::after {
+    content: "*should have exactly 10 numbers";
+    font: 600 0.8rem helvetica, sans-serif;
+    color: red;
+    position: absolute;
+    width: 250px;
+    height: 2rem;
+    top: 30px;
+    right: 7px;
+}
+
+input[type = "email"]:user-invalid + span::after {
+    content: "*invalid email format";
+    font: 600 0.8rem helvetica, sans-serif;
+    color: red;
+    position: absolute;
+    width: 250px;
+    height: 2rem;
+    top: 30px;
+    right: 7px;
+}
+
+.error-container {
+    position: relative;
+}
+
+.errorMessage {
+    position: absolute;
+    top: 37px;
+    right: 8px;
+    width: 250px;
+    font: 600 0.8rem helvetica, sans-serif;
+    color: red;
+}
+
 .input-container + div {
     margin: 1rem 0 0 4rem;
     font-size: 1.2rem;

@@ -36,11 +36,11 @@
                 </div>
                 <div>
                     <label for="email">Email <span aria-label="required">*</span> </label>
-                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                    <div><input type="email" id="email" name="email" placeholder="abc@gmail.com" required><span></span></div>
                 </div>
                 <div>
                     <label for="password">Password <span aria-label="required">*</span> </label>
-                    <input type="password" id="password" name="password" required>
+                    <div><input type="password" id="password" name="password" required><span></span></div>
                 </div>
             </div>
             <div>
@@ -51,12 +51,14 @@
        
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <div><input type="tel" id="phone" name="phone" pattern="\d{10}"><span></span></div>
                 </div>
        
                 <div>
                     <label for="pwd_confirm">Confirm Password <span aria-label="required">*</span> </label>
-                    <input type="password" id="pwd_confirm" name="pwd_confirm" class="error" required>
+                    <div class="error-container">
+                        <input type="password" id="pwd_confirm" name="pwd_confirm" class="error" required><span class="errorMessage"></span>
+                    </div>
                 </div>
             </div>
         </div>
